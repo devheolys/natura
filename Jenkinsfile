@@ -1,4 +1,3 @@
-sh 'git pull origin v3'
 pipeline {
     agent any
 
