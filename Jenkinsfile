@@ -5,7 +5,7 @@ pipeline {
         stage('clone') {
             steps {
 		sh 'cd /home/dev/natura/NaturaPass'
-		sh 'git clone origin master'
+		sh 'git pull origin master'
             }
         }
         }
