@@ -10,13 +10,6 @@ pipeline {
             }
         }
 
-        stage('su') {
-            steps {
-                
-                sh 'su dev'
-                
-            }
-        }
 
         stage('touch') {
             steps {
