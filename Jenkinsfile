@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('ssh') {
-            steps {
-                sh 'ssh dev@103.56.156.131'
-
-            }
-        }
-
         stage('cd') {
             steps {
                 
