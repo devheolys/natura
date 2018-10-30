@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('clone') {
+        stage('ssh') {
             steps {
                 sh 'ssh dev@103.56.156.131'
 
             }
         }
 
-        stage('clone') {
+        stage('cd') {
             steps {
                 
                 sh 'cd /home/dev/natura/NaturaPass'
@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('clone') {
+        stage('su') {
             steps {
                 
                 sh 'su dev'
@@ -25,7 +25,7 @@ pipeline {
             }
         }
 
-        stage('clone') {
+        stage('touch') {
             steps {
                
                 sh 'touch quynh.test'
@@ -33,7 +33,7 @@ pipeline {
             }
         }
 
-        stage('clone') {
+        stage('pull') {
             steps {
                 
                 sh 'git pull origin master'
